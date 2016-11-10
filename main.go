@@ -1,3 +1,13 @@
+/// struct, interface tanımlamaları:
+///	her ikiside type anahtar kelimesi, isim ve sırasıyla struct, interface alarak tanımlanırlar
+///	oluşturulan structlara interface uygulanması için interface de tanımlanan metot, her struct için
+///	bir metot olmalıdır. Yani tanımlama şu şekilde olmalıdır: 
+///		func (degisken_adi Struct_Adi) interfacedeki_metot_ismi() varsa_geri_donus_degeri {}
+///	Not: Bu şekilde tanımlanan her metot ilgili struct'ın belirtilen interface'yi uyguladığı anlamına gelir. Önemli olan
+///	bu metot isminin aynı olmasıdır.
+///	Bu metotlar pointer struct olarak da belirtilebilirler:
+///		func (degisken_adi *Struct_Adi) interfacedeki_metot_ismi() varsa_geri_donus_degeri {}
+
 package main
 
 import (
