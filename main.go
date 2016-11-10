@@ -15,38 +15,37 @@ import (
 	"math"
 )
 
-type Circle struct {
-	x float64
-	y float64
+type Daire struct {
+	a float64
+	b float64
 	r float64
 }
-type Rectangle struct {
-	width float64
-	height float64
+type Dikdortgen struct {
+	genislik float64
+	yukseklik float64
 }
-func (r Rectangle) area() float64 {
-	return r.width * r.height
+func (d Dikdortgen) alan() float64 {
+	return d.genislik * d.yukseklik
 }
-func (c Circle) area() float64 {
-	return math.Pi * c.r * c.r
+func (d Daire) alan() float64 {
+	return math.Pi * d.r * d.r
 }
 
-type Shape interface {
-	 area() float64
+type Sekil interface {
+	 alan() float64
 }
-type MultipleShape struct {
-	shapes []Shape
+type CokSekil struct {
+	sekiller []Sekil
 }	
 
 func main() {
-	multiShape := MultipleShape {
-		shapes: []Shape{
-			Circle { 0, 0, 5},
-			Rectangle{ 10, 10 },
+	cokSekil := CokSekil {
+		sekiller: []Sekil{
+			Daire { 0, 0, 5},
+			Dikdortgen{ 10, 10 },
 		},
 	}
-	for name, v := range multiShape.shapes {
-		fmt.Println(name, v.area())
+	for num, sek := range cokSekil.sekiller {
+		fmt.Println(name, sek.alan())
 	}
-	fmt.Println()
 }
