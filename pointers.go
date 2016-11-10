@@ -1,15 +1,15 @@
-// takes two pointer, change their value with each other
+// iki tane pointer alır, değerlerini birbiri ile değiştirir
 func swap(x *int, y *int) {
   temp := *x
   *x = *y
   *y = temp
-  
+  // pointerların değerlerini ekrana yazdırır
   fmt.Println(*x, *y)
 }
 
 func main() {
   x := int(1)
   y := int(2)
-  // addresses are passing to the swap function
+  // swap fonksiyonuna iki tane adres veriliyor
   swap(&x, &y)
 }
