@@ -1,2 +1,2 @@
-# gotalks
+# GoKonusuyor
 Playing with go
