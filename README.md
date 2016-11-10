@@ -1,0 +1,2 @@
+# gotalks
+Playing with go
