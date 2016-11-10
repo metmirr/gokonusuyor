@@ -1,2 +1,2 @@
 # GoKonusuyor
-Playing with go
+Go programalama dilini öğrenme
