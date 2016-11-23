@@ -21,7 +21,7 @@ Go programalama dilini öğrenme
     $ .\dosya_adi.exe 
     ```
 
-###Not:
+#####Not:
   Windows kullanıyorsanız powershell kurmanızı öneririm. Böylece derleyiciye erişiminiz kolay olur. Sadece derleyici ismini yazmanız yeterl olur:
   ``` 
   $ go veya $ python
