@@ -1,8 +1,6 @@
 // iki tane pointer alır, değerlerini birbiri ile değiştirir
-func swap(x *int, y *int) {
-  temp := *x
-  *x = *y
-  *y = temp
+func swap(x, y *int) {
+  *x, *y = *y, *x
   // pointerların değerlerini ekrana yazdırır
   fmt.Println(*x, *y)
 }
